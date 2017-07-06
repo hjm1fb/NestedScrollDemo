@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+    <kyle.nestedscrolldemo.widget.PullZoomStickyNavLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/pullZoomView">
+        <kyle.nestedscrolldemo.widget.StickyNavLayout
+            android:id="@+id/stickyNav"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:orientation="vertical">
+            <RelativeLayout android:id="@+id/topView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#FBFBFB"
+                            android:paddingBottom="16dp"
+            >
+
+                <ImageView
+                    android:id="@+id/blurAlbumImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="165dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/bg_player_track_blur"
+                    android:visibility="invisible"
+                />
+                <ImageView
+                    android:id="@+id/album_info_backgroud_mask"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/blurAlbumImage"
+                    android:layout_alignTop="@id/blurAlbumImage"
+                    android:background="#33000000"/>
+                <ImageView
+                    android:id="@+id/album_info_background"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/blurAlbumImage"
+                    android:layout_alignTop="@id/blurAlbumImage"
+                    android:background="@android:color/holo_purple"
+                />
+                <RelativeLayout android:id="@+id/contentInfoLayout"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/transparent">
+                    <ImageView
+                        android:id="@+id/albumImage"
+                        android:layout_width="130dp"
+                        android:layout_height="130dp"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginTop="51dp"
+                        android:background="@android:color/holo_orange_light"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/icon_default_1_to_1"
+                    />
+
+                    <ImageView android:layout_width="match_parent"
+                               android:layout_height="25dp"
+                               android:layout_alignBottom="@id/albumImage"
+                               android:layout_alignLeft="@id/albumImage"
+                               android:layout_alignRight="@id/albumImage"
+                               android:background="@drawable/gradient_white_to_black"/>
+                    <TextView android:id="@+id/albumTitle"
+                              android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:layout_alignTop="@id/albumImage"
+                              android:layout_marginBottom="8dp"
+                              android:layout_marginLeft="11dp"
+                              android:layout_toRightOf="@id/albumImage"
+                              android:ellipsize="end"
+                              android:maxLines="1"
+                              android:textColor="@color/white"
+                              android:textSize="15sp"
+                    />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <com.astuetz.PagerSlidingTabStrip
+                android:id="@+id/fragmentsTab"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:layout_toLeftOf="@+id/subSlideDown"
+                android:background="#FBFBFB"
+                app:pstsDividerColor="#FBFBFB"
+                app:pstsDividerPadding="30dp"
+                app:pstsIndicatorColor="#FF9966"
+                app:pstsShouldExpand="true"
+                app:pstsTabPaddingLeftRight="8dp"
+                app:pstsUnderlineColor="#ECECEC"
+                app:pstsUnderlineHeight="0.5dp"
+                app:pstsIndicatorHeight="1dp"
+                />
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/viewpager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </kyle.nestedscrolldemo.widget.StickyNavLayout>
+
+    </kyle.nestedscrolldemo.widget.PullZoomStickyNavLayout>
+    <LinearLayout
+        android:id="@+id/fakeActionLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#00ffffff"
+        android:orientation="vertical">
+        <include
+            layout="@layout/layout_title_bar"
+        />
+    </LinearLayout>
+    <LinearLayout android:id="@+id/actionLayout"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:alpha="1"
+                  android:background="#FBFBFB"
+                  android:gravity="center"
+                  android:orientation="vertical">
+        <View android:id="@+id/statusBarBackGround"
+              android:layout_width="match_parent"
+              android:layout_height="0dp"
+              android:background="#000000"/>
+        <include
+            layout="@layout/layout_title_bar"
+        />
+    </LinearLayout>
+</RelativeLayout>

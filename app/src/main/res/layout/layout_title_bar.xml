@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:id="@+id/barRoot"
+   android:background="#FBFBFB">
+
+    <ImageView android:id="@+id/naviBack"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="4dp"
+               android:layout_centerVertical="true"
+               android:padding="8dp"
+               android:src="@drawable/back_ico"
+
+    />
+
+    <TextView android:id="@+id/title"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_centerInParent="true"
+              android:gravity="center"
+              android:textColor="#000000"
+              android:textSize="18sp"
+              android:maxLines="1"
+              android:ellipsize="end"
+              android:layout_toRightOf="@id/naviBack"
+              android:layout_marginRight="16sp"
+    />
+    <View
+        android:id="@+id/bottomLine"
+        style="@style/globalDivideLine"
+    android:layout_alignParentBottom="true"
+    />
+</RelativeLayout>
