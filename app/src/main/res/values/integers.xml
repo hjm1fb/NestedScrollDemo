@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="discovery_load_more_offset">10</integer>
+</resources>

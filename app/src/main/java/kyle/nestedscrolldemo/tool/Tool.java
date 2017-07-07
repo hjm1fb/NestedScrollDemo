@@ -80,4 +80,8 @@ public class Tool {
     public static int getPixelsFromResource(Resources resources,int dimensionResourceId){
         return (int)(resources.getDimension(dimensionResourceId)+0.5);
     }
+
+    public static <T> boolean isEmpty(T[] array) {
+        return array == null || array.length == 0;
+    }
 }

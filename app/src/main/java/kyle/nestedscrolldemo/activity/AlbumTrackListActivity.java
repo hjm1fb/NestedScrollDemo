@@ -3,19 +3,18 @@
  * @include classes:MoreListActivity;interfaces:MoreListActivity
  * @version 1.0.0
  * @data 2013-12-19
- * @copyright Copyright (C) 2012-2020 DuoTin Network Technology Co.,LTD 
  */
 package kyle.nestedscrolldemo.activity;
 
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentTransaction;
+import android.support.v7.app.AppCompatActivity;
 import android.view.WindowManager;
 
-import kyle.nestedscrolldemo.fragment.AlbumFragment;
 import kyle.nestedscrolldemo.R;
+import kyle.nestedscrolldemo.fragment.AlbumFragment;
 import kyle.nestedscrolldemo.tool.Tool;
 
 /**
@@ -23,9 +22,8 @@ import kyle.nestedscrolldemo.tool.Tool;
  * @version 1.0.0
  * @name AlbumTrackListActivity
  * @desc 专辑内页
- * @copyright Copyright (C) 2012-2020 DuoTin Network Technology Co.,LTD
  */
-public class AlbumTrackListActivity extends FragmentActivity {
+public class AlbumTrackListActivity extends AppCompatActivity {
 
     public static final String TAG_DOWNLOAD_TRACKS_FRAGMENT = "downloadTracksFragment";
     private AlbumFragment mAlbumFragment;

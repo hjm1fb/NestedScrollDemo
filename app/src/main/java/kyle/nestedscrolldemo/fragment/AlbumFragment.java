@@ -117,7 +117,6 @@ public class AlbumFragment extends AbstractBaseFragment {
         //fakeActionLayout
         fakeActionLayout = (LinearLayout) findViewById(R.id.fakeActionLayout);
         fakeActionLayout.findViewById(R.id.barRoot).setBackgroundColor(fakeActionLayout.getResources().getColor(R.color.transparent));
-        fakeActionLayout.findViewById(R.id.bottomLine).setVisibility(View.GONE);
         fakeNaviBack = (ImageView) fakeActionLayout.findViewById(naviBack);
         fakeNaviBack.setImageResource(R.drawable.white_ico);
         fragmentsTab.setOnPageChangeListener(new ViewPager.OnPageChangeListener() {
@@ -133,6 +132,12 @@ public class AlbumFragment extends AbstractBaseFragment {
             @Override
             public void onPageScrollStateChanged(int state) {
 
+            }
+        });
+        fakeNaviBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                getActivity().finish();
             }
         });
         stickyNav.setOnScrollChangeListener(onScrollChangeListener);

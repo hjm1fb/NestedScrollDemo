@@ -3,4 +3,6 @@
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
     <dimen name="album_fragment_blur_image_height">165dp</dimen>
+    <dimen name="refresh_header_height">51dp</dimen>
+    <dimen name="refresh_foot_height">60dp</dimen>
 </resources>

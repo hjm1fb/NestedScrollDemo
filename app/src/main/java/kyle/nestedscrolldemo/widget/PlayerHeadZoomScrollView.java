@@ -19,7 +19,6 @@ import kyle.nestedscrolldemo.R;
 
 
 /**
- * Created by DUOTIN on 17/3/1.
  * 下拉缩放上方布局,松开回弹的scrollView
  */
 

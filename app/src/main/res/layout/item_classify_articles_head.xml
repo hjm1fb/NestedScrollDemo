@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/head_layout_classify_articles"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="8dp"
+    android:background="@color/white">
+    <ImageView android:id="@+id/iv_head_image"
+               android:layout_width="64dp"
+               android:layout_height="64dp"
+               android:layout_centerHorizontal="true"
+               android:layout_marginTop="14dp"
+               android:background="@android:color/holo_green_light"
+               android:src="@drawable/ic_stars_black"/>
+    <TextView android:id="@+id/tv_head_title" android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_below="@id/iv_head_image"
+              android:layout_centerHorizontal="true"
+              android:layout_marginBottom="12dp"
+              android:layout_marginTop="5dp"
+              android:textColor="#4A4A4A"
+              android:textSize="18sp"
+              android:textStyle="bold"/>
+</RelativeLayout>

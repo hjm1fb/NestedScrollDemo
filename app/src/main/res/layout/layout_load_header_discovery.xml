@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<kyle.nestedscrolldemo.widget.RefreshHeaderView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFF2F2F2">
+    <RelativeLayout android:layout_width="match_parent"
+                    android:layout_height="@dimen/refresh_header_height">
+        <RelativeLayout
+            android:id="@+id/not_refreshing_layout"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+            <ImageView
+                android:id="@+id/ivArrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:src="@drawable/ico_refresh_arrow_down"/>
+            <TextView
+                android:id="@+id/tvRefresh"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="8dp"
+                android:textColor="#565A5D"
+                android:textSize="12sp"/>
+            <TextView
+                android:id="@+id/lastRefresh"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/tvRefresh"
+                android:layout_marginTop="4dp"
+                android:textColor="#bcbcbc"
+                android:textSize="10sp"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/refreshing_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true">
+            <ProgressBar
+                android:id="@+id/progressbar"
+                style="?android:attr/progressBarStyleSmallInverse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"/>
+            <TextView
+                android:id="@+id/tv_load_more"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/progressbar"
+                android:layout_marginTop="2dp"
+                android:gravity="center"
+                android:text="加载更多"
+                android:textColor="#B3BDC4"
+                android:textSize="12sp"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</kyle.nestedscrolldemo.widget.RefreshHeaderView>
