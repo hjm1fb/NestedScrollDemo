@@ -7,5 +7,10 @@ demo1 <br>
 ![这里写图片描述](https://farm5.staticflickr.com/4013/35586396232_11bd04ed13_o.gif)
 
 <br>
-<font color=#A52A2A>demo2</font><br>
- 正在整理代码，近期上传。。。 
+<br>
+demo2 <br>
+类似于支付宝首页，带有下拉刷新功能的嵌套滑动
+
+![这里写图片描述](https://farm5.staticflickr.com/4235/35387004030_8532378a75_o.gif)
+
+<br>
