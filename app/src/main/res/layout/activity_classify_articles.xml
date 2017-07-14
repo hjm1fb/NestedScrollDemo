@@ -17,7 +17,7 @@ android:fitsSystemWindows="true">
         android:layout_height="match_parent"
         app:layout_scrollFlags="scroll|exitUntilCollapsed"
         app:title=" ">
-        <!-- android:layout_marginTop="45dp" 即@+id/toolbar的高度 -->
+        <!-- android:layout_marginTop="45dp" 即@layout/layout_title_bar的高度 -->
         <include
             layout="@layout/item_classify_articles_head"
             android:layout_width="match_parent"
